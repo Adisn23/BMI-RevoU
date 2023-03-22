@@ -48,12 +48,12 @@ function countBmi() {
   document.querySelector("#result").innerHTML = bmi.toFixed(2);
 }
 
-// When the user clicks on <span> (x), close the modal
+// Saat user klik <span> (x), modal tertutup
 span.onclick = function () {
   modal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
+// Saat user klik dimanapun, modal tertutup
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
